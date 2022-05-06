@@ -51,13 +51,13 @@ class CalculatorTest {
     // arrange
     Calculator calculator = new Calculator();
     // act
-    assertThrows(IllegalArgumentException.class, () -> { // Jeg forventer en exception
+    assertThrows(IllegalArgumentException.class, () -> { // Når jeg forventer en exception, kan man teste det
       calculator.sum(101, 101);
     });
 
     // assert
     //int expected = -3;
-    // assertEquals(expected, actual); // bruge assert indebygde funktioner
+    // assertEquals(expected, actual); // bruge assert sine indebygde funktioner i stedet for if-sætninger!
 
   }
 
